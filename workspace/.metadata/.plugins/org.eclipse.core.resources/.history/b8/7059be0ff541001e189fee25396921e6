@@ -1,0 +1,30 @@
+// Test301
+
+program test301
+
+	const int nula = 0;
+	const int jedan = 1;
+	const int dva = 2;
+	const int tri = 3;
+	const int cetiri = 4;
+	const int pet = 5;
+
+	int niz2[], a, b;
+	char nizch[];
+{
+	void main()	
+	int maximum;
+	int niz[];
+	{
+		niz = new int[4];
+		niz[0] = jedan;
+		niz[1] = dva;
+		niz[2] = tri;
+		niz[3] = cetiri;
+		//niz~2,1~;
+		maximum = max niz;
+
+	}
+}
+
+

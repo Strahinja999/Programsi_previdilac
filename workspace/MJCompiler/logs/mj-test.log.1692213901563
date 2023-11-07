@@ -1,0 +1,27 @@
+INFO  21:24:48,116 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  21:24:48,196 - #2 program
+INFO  21:24:48,196 - #18 test301
+INFO  21:24:48,196 - #16 const
+INFO  21:24:48,197 - #18 int
+INFO  21:24:48,197 - #18 nula
+INFO  21:24:48,197 - #12 =
+INFO  21:24:48,197 - #17 0
+INFO  21:24:48,197 - #5 ;
+INFO  21:24:48,198 - #16 const
+INFO  21:24:48,199 - #18 int
+INFO  21:24:48,199 - #18 jedan
+INFO  21:24:48,199 - #12 =
+INFO  21:24:48,199 - #17 1
+INFO  21:24:48,199 - #5 ;
+INFO  21:24:48,199 - #16 const
+INFO  21:24:48,199 - #18 int
+INFO  21:24:48,199 - #18 pet
+INFO  21:24:48,199 - #12 =
+INFO  21:24:48,199 - #17 5
+INFO  21:24:48,199 - #5 ;
+INFO  21:24:48,199 - #16 const
+INFO  21:24:48,200 - #18 a
+INFO  21:24:48,200 - #12 =
+ERROR 21:24:48,200 - 
+Sintaksna greska na liniji 8
+ERROR 21:24:48,200 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 8

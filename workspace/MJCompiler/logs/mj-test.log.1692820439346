@@ -1,0 +1,124 @@
+INFO  21:53:51,692 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  21:53:51,720 - #2 program
+INFO  21:53:51,720 - #18 test301
+INFO  21:53:51,720 - #16 const
+INFO  21:53:51,720 - #18 int
+INFO  21:53:51,721 - #18 nula
+INFO  21:53:51,721 - #12 =
+INFO  21:53:51,721 - #17 0
+INFO  21:53:51,721 - #5 ;
+INFO  21:53:51,722 - #16 const
+INFO  21:53:51,722 - #18 int
+INFO  21:53:51,722 - #18 jedan
+INFO  21:53:51,722 - #12 =
+INFO  21:53:51,722 - #17 1
+INFO  21:53:51,722 - #5 ;
+INFO  21:53:51,722 - #16 const
+INFO  21:53:51,722 - #18 int
+INFO  21:53:51,722 - #18 dva
+INFO  21:53:51,722 - #12 =
+INFO  21:53:51,723 - #17 20
+INFO  21:53:51,723 - #5 ;
+INFO  21:53:51,723 - #16 const
+INFO  21:53:51,723 - #18 int
+INFO  21:53:51,723 - #18 tri
+INFO  21:53:51,723 - #12 =
+INFO  21:53:51,723 - #17 30
+INFO  21:53:51,723 - #5 ;
+INFO  21:53:51,723 - #16 const
+INFO  21:53:51,723 - #18 int
+INFO  21:53:51,723 - #18 cetiri
+INFO  21:53:51,723 - #12 =
+INFO  21:53:51,723 - #17 4
+INFO  21:53:51,723 - #5 ;
+INFO  21:53:51,724 - #16 const
+INFO  21:53:51,724 - #18 int
+INFO  21:53:51,724 - #18 pet
+INFO  21:53:51,724 - #12 =
+INFO  21:53:51,724 - #17 5
+INFO  21:53:51,724 - #5 ;
+INFO  21:53:51,724 - #18 int
+INFO  21:53:51,724 - #18 niz2
+INFO  21:53:51,724 - #23 [
+INFO  21:53:51,724 - #24 ]
+INFO  21:53:51,724 - #8 ,
+INFO  21:53:51,725 - #18 a
+INFO  21:53:51,725 - #8 ,
+INFO  21:53:51,725 - #18 b
+INFO  21:53:51,725 - #5 ;
+INFO  21:53:51,725 - #18 char
+INFO  21:53:51,726 - #18 nizch
+INFO  21:53:51,726 - #23 [
+INFO  21:53:51,726 - #24 ]
+INFO  21:53:51,726 - #5 ;
+INFO  21:53:51,726 - #3 {
+INFO  21:53:51,726 - #13 void
+INFO  21:53:51,726 - #18 main
+INFO  21:53:51,727 - #6 (
+INFO  21:53:51,727 - #7 )
+INFO  21:53:51,727 - #18 int
+INFO  21:53:51,727 - #18 zbir
+INFO  21:53:51,727 - #5 ;
+INFO  21:53:51,727 - #18 int
+INFO  21:53:51,727 - #18 niz
+INFO  21:53:51,728 - #23 [
+INFO  21:53:51,728 - #24 ]
+INFO  21:53:51,728 - #5 ;
+INFO  21:53:51,728 - #3 {
+INFO  21:53:51,728 - #18 niz
+INFO  21:53:51,728 - #12 =
+INFO  21:53:51,728 - #37 new
+INFO  21:53:51,729 - #18 int
+INFO  21:53:51,729 - #23 [
+INFO  21:53:51,729 - #17 4
+INFO  21:53:51,729 - #24 ]
+INFO  21:53:51,729 - #5 ;
+INFO  21:53:51,729 - #18 niz
+INFO  21:53:51,729 - #23 [
+INFO  21:53:51,730 - #17 0
+INFO  21:53:51,730 - #24 ]
+INFO  21:53:51,730 - #12 =
+INFO  21:53:51,730 - #18 jedan
+INFO  21:53:51,730 - #5 ;
+INFO  21:53:51,730 - #18 niz
+INFO  21:53:51,730 - #23 [
+INFO  21:53:51,730 - #17 1
+INFO  21:53:51,731 - #24 ]
+INFO  21:53:51,731 - #12 =
+INFO  21:53:51,731 - #18 dva
+INFO  21:53:51,731 - #5 ;
+INFO  21:53:51,731 - #18 niz
+INFO  21:53:51,731 - #23 [
+INFO  21:53:51,731 - #17 2
+INFO  21:53:51,731 - #24 ]
+INFO  21:53:51,731 - #12 =
+INFO  21:53:51,731 - #18 tri
+INFO  21:53:51,731 - #5 ;
+INFO  21:53:51,731 - #18 niz
+INFO  21:53:51,731 - #23 [
+INFO  21:53:51,731 - #17 3
+INFO  21:53:51,731 - #24 ]
+INFO  21:53:51,731 - #12 =
+INFO  21:53:51,731 - #18 cetiri
+INFO  21:53:51,731 - #5 ;
+INFO  21:53:51,731 - #18 niz
+INFO  21:53:51,731 - #50 ~
+INFO  21:53:51,731 - #17 2
+INFO  21:53:51,731 - #8 ,
+INFO  21:53:51,732 - #19 a
+INFO  21:53:51,732 - #50 ~
+INFO  21:53:51,732 - #5 ;
+INFO  21:53:51,732 - #4 }
+INFO  21:53:51,732 - #4 }
+INFO  21:53:51,738 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 19
+INFO  21:53:51,738 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 20
+INFO  21:53:51,739 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 20
+INFO  21:53:51,739 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 21
+INFO  21:53:51,739 - Koriscenje konstante Con dva: int, 20, 0  na liniji 21
+INFO  21:53:51,739 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 22
+INFO  21:53:51,739 - Koriscenje konstante Con tri: int, 30, 0  na liniji 22
+INFO  21:53:51,739 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 23
+INFO  21:53:51,739 - Koriscenje konstante Con cetiri: int, 4, 0  na liniji 23
+INFO  21:53:51,739 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 24
+ERROR 21:53:51,739 - Neki od izraza nije int tipa na liniji 24
+ERROR 21:53:51,740 - Parsiranje NIJE uspesno zavrseno!

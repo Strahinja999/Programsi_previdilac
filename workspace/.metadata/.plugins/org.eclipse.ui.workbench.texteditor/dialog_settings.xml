@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="isRegEx" value="false"/>
+		<item key="selection" value="VarDeclElem"/>
+		<item key="casesensitive" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="wrap" value="true"/>
+		<item key="wholeword" value="false"/>
+		<list key="findhistory">
+			<item value="VarDeclElem"/>
+			<item value="putJump"/>
+			<item value="putJmp"/>
+			<item value="aload"/>
+			<item value="array"/>
+			<item value="FactorExpr"/>
+			<item value="astore"/>
+			<item value="DSFindAny"/>
+			<item value="DesignatorStatement"/>
+			<item value="public void visit(AddopTermList addExpr)"/>
+			<item value="load"/>
+			<item value="arraylength"/>
+			<item value="AddopTermList"/>
+			<item value="fixup"/>
+			<item value="enter"/>
+		</list>
+		<list key="replacehistory">
+			<item value="foreach"/>
+			<item value="VarDeclList"/>
+			<item value="Assignop"/>
+			<item value="FormParsList"/>
+			<item value="NUMCONST"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_X_ORIGIN" value="1632"/>
+		<item key="DIALOG_Y_ORIGIN" value="365"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="729"/>
+		<item key="DIALOG_Y_ORIGIN" value="403"/>
+	</section>
+</section>

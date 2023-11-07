@@ -1,0 +1,129 @@
+// generated with ast extension for cup
+// version 0.8
+// 23/7/2023 21:43:2
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class ClassDecl implements SyntaxNode {
+
+    private SyntaxNode parent;
+    private int line;
+    private String className;
+    private ExtendsClass ExtendsClass;
+    private VarDeclList VarDeclList;
+    private ConstructorAndMethod01 ConstructorAndMethod01;
+
+    public ClassDecl (String className, ExtendsClass ExtendsClass, VarDeclList VarDeclList, ConstructorAndMethod01 ConstructorAndMethod01) {
+        this.className=className;
+        this.ExtendsClass=ExtendsClass;
+        if(ExtendsClass!=null) ExtendsClass.setParent(this);
+        this.VarDeclList=VarDeclList;
+        if(VarDeclList!=null) VarDeclList.setParent(this);
+        this.ConstructorAndMethod01=ConstructorAndMethod01;
+        if(ConstructorAndMethod01!=null) ConstructorAndMethod01.setParent(this);
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className=className;
+    }
+
+    public ExtendsClass getExtendsClass() {
+        return ExtendsClass;
+    }
+
+    public void setExtendsClass(ExtendsClass ExtendsClass) {
+        this.ExtendsClass=ExtendsClass;
+    }
+
+    public VarDeclList getVarDeclList() {
+        return VarDeclList;
+    }
+
+    public void setVarDeclList(VarDeclList VarDeclList) {
+        this.VarDeclList=VarDeclList;
+    }
+
+    public ConstructorAndMethod01 getConstructorAndMethod01() {
+        return ConstructorAndMethod01;
+    }
+
+    public void setConstructorAndMethod01(ConstructorAndMethod01 ConstructorAndMethod01) {
+        this.ConstructorAndMethod01=ConstructorAndMethod01;
+    }
+
+    public SyntaxNode getParent() {
+        return parent;
+    }
+
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line=line;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(ExtendsClass!=null) ExtendsClass.accept(visitor);
+        if(VarDeclList!=null) VarDeclList.accept(visitor);
+        if(ConstructorAndMethod01!=null) ConstructorAndMethod01.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(ExtendsClass!=null) ExtendsClass.traverseTopDown(visitor);
+        if(VarDeclList!=null) VarDeclList.traverseTopDown(visitor);
+        if(ConstructorAndMethod01!=null) ConstructorAndMethod01.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(ExtendsClass!=null) ExtendsClass.traverseBottomUp(visitor);
+        if(VarDeclList!=null) VarDeclList.traverseBottomUp(visitor);
+        if(ConstructorAndMethod01!=null) ConstructorAndMethod01.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("ClassDecl(\n");
+
+        buffer.append(" "+tab+className);
+        buffer.append("\n");
+
+        if(ExtendsClass!=null)
+            buffer.append(ExtendsClass.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(VarDeclList!=null)
+            buffer.append(VarDeclList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ConstructorAndMethod01!=null)
+            buffer.append(ConstructorAndMethod01.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [ClassDecl]");
+        return buffer.toString();
+    }
+}

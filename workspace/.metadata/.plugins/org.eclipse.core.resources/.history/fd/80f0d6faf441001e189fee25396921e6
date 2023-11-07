@@ -1,0 +1,58 @@
+// generated with ast extension for cup
+// version 0.8
+// 23/7/2023 22:35:18
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class IdNumBoolConstElem extends IDNumCharBoolConstList {
+
+    private IDNumCharBoolConst IDNumCharBoolConst;
+
+    public IdNumBoolConstElem (IDNumCharBoolConst IDNumCharBoolConst) {
+        this.IDNumCharBoolConst=IDNumCharBoolConst;
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.setParent(this);
+    }
+
+    public IDNumCharBoolConst getIDNumCharBoolConst() {
+        return IDNumCharBoolConst;
+    }
+
+    public void setIDNumCharBoolConst(IDNumCharBoolConst IDNumCharBoolConst) {
+        this.IDNumCharBoolConst=IDNumCharBoolConst;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("IdNumBoolConstElem(\n");
+
+        if(IDNumCharBoolConst!=null)
+            buffer.append(IDNumCharBoolConst.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [IdNumBoolConstElem]");
+        return buffer.toString();
+    }
+}

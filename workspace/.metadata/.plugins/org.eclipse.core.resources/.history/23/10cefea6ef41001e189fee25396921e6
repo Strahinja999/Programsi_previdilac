@@ -1,0 +1,416 @@
+package rs.ac.bg.etf.pp1;
+
+import rs.ac.bg.etf.pp1.ast.*;
+import rs.etf.pp1.mj.runtime.Code;
+import rs.etf.pp1.symboltable.Tab;
+import rs.etf.pp1.symboltable.concepts.Obj;
+import rs.etf.pp1.symboltable.concepts.Struct;
+import sun.jvm.hotspot.debugger.cdbg.CDebugger;
+
+public class CodeGenerator extends VisitorAdaptor {
+	
+	private int mainPc;
+	
+	public int getMainPc() {
+		return mainPc;
+	}
+
+	private static void enterFunction(ReturnType returnType) {
+		returnType.obj.setAdr(Code.pc);
+		
+		Code.put(Code.enter);
+		Code.put(returnType.obj.getLevel());
+		Code.put(returnType.obj.getLocalSymbols().size());
+	}
+	
+	@Override
+	public void visit(RetVoid returnType) {
+		if ("main".equalsIgnoreCase(returnType.obj.getName())) {
+			mainPc = Code.pc;
+		}
+		enterFunction(returnType);
+	}
+	
+	@Override
+	public void visit(RetType returnType) {
+		enterFunction(returnType);
+	}
+	
+	@Override
+	public void visit(MethodDecl MethodDecl) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	@Override
+	public void visit(ReturnStmt returnStmt) {
+		Code.put(Code.exit);
+		Code.put(Code.return_);
+	}
+	
+	@Override
+	public void visit(DesignatorStatement designatorStmt) {
+		Obj obj = designatorStmt.getDesignator().obj;
+		if(designatorStmt.getDesignatorStatementList() instanceof DSAssignop) {
+			Code.store(obj);
+		}else if(designatorStmt.getDesignatorStatementList() instanceof DSFindAny) {
+			DSFindAny findAny = (DSFindAny)designatorStmt.getDesignatorStatementList();
+			Obj arrayObj = findAny.getDesignator().obj;
+			
+			Code.put(Code.enter);
+			Code.put(1);
+			Code.put(2);
+			
+			// inicijalizacija brojaca na duzinu niza
+			Code.load(arrayObj);
+			Code.put(Code.arraylength);
+			Code.put(Code.store_1);
+			
+			// uslov while-a
+			int whileAdr = Code.pc;
+			Code.put(Code.load_1);
+			Code.loadConst(0);
+			Code.putFalseJump(Code.gt, 0);
+			int whileEndAdr = Code.pc - 2;
+			
+			// telo while-a
+			// dekrement brojaca
+			Code.put(Code.load_1);
+			Code.loadConst(-1);
+			Code.put(Code.add);
+			Code.put(Code.store_1);
+			
+			// uslov if-a
+			Code.load(arrayObj);
+			Code.put(Code.load_1);
+			if (arrayObj.getType().getElemType() == Tab.charType)
+				Code.put(Code.baload);
+	        else
+	        	Code.put(Code.aload);
+			Code.put(Code.load_n);
+			Code.putFalseJump(Code.eq, 0);
+			int ifEndAdr = Code.pc - 2;
+			
+			// telo if-a
+			Code.loadConst(1);
+			Code.putJump(0);
+			int whileBreakAdr = Code.pc - 2;
+			
+			// kraj if-a
+			Code.fixup(ifEndAdr);
+			
+			// kraj while-a
+			Code.putJump(whileAdr);
+			Code.fixup(whileEndAdr);
+			
+			Code.loadConst(0);
+			Code.fixup(whileBreakAdr);
+			
+			Code.put(Code.exit);
+			Code.store(obj);
+		}else if(designatorStmt.getDesignatorStatementList() instanceof DSActPars01) {
+			int offset = obj.getAdr() - Code.pc; 
+			Code.put(Code.call);
+			Code.put2(offset);
+			if(obj.getType() != Tab.noType) {
+				Code.put(Code.pop);
+			}
+		}else if(designatorStmt.getDesignatorStatementList() instanceof DSSwap){
+			Designator des = designatorStmt.getDesignator();
+			Obj desObj = des.obj;
+			
+			Code.load(obj);
+			
+			Code.put(Code.enter);
+			Code.put(0);	//parametri metode
+			Code.put(3);	//lokalna prom
+			
+			Code.put(Code.exit);
+			
+		}else {
+			if(obj.getKind() == Obj.Elem) {
+				Code.put(Code.dup2);
+			}
+			Code.load(obj);
+			if(designatorStmt.getDesignatorStatementList() instanceof DbPlus) {
+				Code.loadConst(1);				
+			}else {
+				Code.loadConst(-1);	
+			}
+			Code.put(Code.add);
+			Code.store(obj);
+		}
+			
+	}
+	
+	@Override
+	public void visit(DesignatorHelper designatorHelper) {
+		Code.load(designatorHelper.getDesignator().obj);
+	}
+	
+	@Override
+	public void visit(PrintStmt printStmt) {
+		if(printStmt.getNumConst01() instanceof YesNumConst) {
+			int len = ((YesNumConst)printStmt.getNumConst01()).getNumberName();
+			Code.loadConst(len);	
+		}else {
+			Code.put(Code.const_1);
+		}
+		if(printStmt.getExpr().struct == Tab.charType) {
+			Code.put(Code.bprint);
+		}else {
+			Code.put(Code.print);			
+		}
+	}
+	
+	@Override
+	public void visit(ReadStmt readStmt) {
+		if(readStmt.getDesignator().obj.getType() == Tab.charType) {
+			Code.put(Code.bread);
+		}else {
+			Code.put(Code.read);			
+		}
+		Code.store(readStmt.getDesignator().obj);
+	}
+	
+	@Override
+	public void visit(FactorNumConst factorConst) {
+		Code.loadConst(factorConst.getNumber());
+	}
+	
+	@Override
+	public void visit(FactorCharConst factorConst) {
+		Code.loadConst(factorConst.getCharacter());
+	}
+	
+	@Override
+	public void visit(FactorBoolConst factorConst) {
+		if(factorConst.getBool()) {
+			Code.loadConst(1);
+		}else {
+			Code.loadConst(0);			
+		}
+	}
+	
+	@Override
+	public void visit(FactorDesignator factorDesignator) {
+		Obj obj = factorDesignator.getDesignator().obj;
+		if(factorDesignator.getLPActParsRP01() instanceof LPActParsRP) {
+			int offset = obj.getAdr() - Code.pc; 
+			Code.put(Code.call);
+			Code.put2(offset);
+		} else {
+			Code.load(obj);
+		}
+	}
+	
+	@Override
+	public void visit(FactorNew newObj) {
+		if(newObj.getFactorList() instanceof FactorListExpr) {
+			Code.put(Code.newarray);
+			if(newObj.getType().struct == Tab.charType) {
+				Code.put(0);
+			}else {
+				Code.put(1);
+			}
+		}
+	}
+	
+	@Override
+	public void visit(AddopTermList addExpr) {
+		if(addExpr.getAddop() instanceof AddPlus) {
+			Code.put(Code.add);			
+		}else if (addExpr.getAddop() instanceof AddMinus){
+			Code.put(Code.sub);
+		}else {
+			//modifikacija
+			Code.put(Code.enter);
+			Code.put(0);
+			Code.put(2);
+			
+			Code.put(Code.store_n);	//lokalna promenljiva koja cuva index
+			Code.put(Code.store_1);	//lokalna promenljiva koja cuva adresu niza
+			
+			
+			//azuriranje indexa
+			Code.put(Code.load_n);
+			Code.loadConst(-1);
+			Code.put(Code.add);
+			Code.put(Code.store_n);
+			
+			//dohvata duzinu niza sa zadatom adresom koja se nalazi u lokalnoj promenljivi 1
+			Code.put(Code.load_1);
+			Code.put(Code.arraylength);
+			Code.put(Code.store_2);	//u lokalnoj prom 2 se nalazi duzina niza
+			
+			//dohvatanje elementa od napred
+			Code.put(Code.load_1);
+			Code.put(Code.load_n);
+			Code.put(Code.aload);	//na steku se nalazi prvi operand onaj od napred
+			
+			//azuriranje indexa za dohvatanje elementa od pozadi
+			Code.put(Code.load_2);
+			Code.put(Code.load_n);
+			Code.loadConst(1);
+			Code.put(Code.add);
+			Code.put(Code.sub);
+			Code.put(Code.store_n);	// u lokalnoj prom 0 se nalazi nov index
+			
+			Code.put(Code.load_1);
+			Code.put(Code.load_n);
+			Code.put(Code.aload);	//na steku se nalazi drugi operand
+			
+			Code.put(Code.add);
+			
+			
+			Code.put(Code.exit);
+			
+		}
+	}
+	
+	@Override
+	public void visit(MulopFactorList mulExpr) {
+		if(mulExpr.getMulop() instanceof MulMul) {
+			Code.put(Code.mul);			
+		}else if(mulExpr.getMulop() instanceof MulDiv){
+			Code.put(Code.div);
+		}else {
+			Code.put(Code.rem);
+		}
+	}
+	
+	@Override
+	public void visit(NoAddopTermListMinus minus) {
+		Code.put(Code.neg);
+	}
+	
+	@Override
+	public void visit(HashTagExpr hastag) {
+		Code.put(Code.enter);
+		
+		Code.put(0);	//broj paramerata f-je
+		Code.put(2);	//broj lokalnih promenljivih
+		
+		
+
+		
+		Code.put(Code.store_n);	//u 0-tu lokalnu promenljivu cuvamo broj
+		Code.put(Code.store_1);	//u 1-u lokalnu promenljuvu cuvamo znak
+		
+		//kod za broj mod 25
+		Code.put(Code.load_n);
+		Code.loadConst(26);
+		Code.put(Code.rem);
+		Code.put(Code.store_n);
+		
+		//if(broj < 0)
+		int if1StartAdr = Code.pc;
+		Code.put(Code.load_n);
+		Code.loadConst(0);
+		Code.putFalseJump(Code.lt, 0);
+		int if1ElseAdr = Code.pc - 2; 
+		//SKOK NA ELSE PRVOG IF-A
+		//posle ovoga nema nista na steku!
+		
+		//than grana if-a
+		//broj = broj * -1;
+		Code.put(Code.load_n);
+		Code.loadConst(-1);
+		Code.put(Code.mul);
+		Code.put(Code.store_n);
+		
+		
+		//for petlja: for(int i = 0; i < broj; i++)
+		//cuvanje vrednosti prom. znak zbog uslova
+		//u lokalnoj prom 2 se nalazi stara vrednost znak prom.
+		Code.loadConst(0);
+		Code.put(Code.store_2);
+		
+		int for1StartAdr = Code.pc;
+		//i < broj - ako su i i broj veci ili jednaki skace na 0
+		Code.put(Code.load_n);
+		Code.put(Code.load_2);
+		Code.putFalseJump(Code.gt, 0);
+		int for1EndAdr = Code.pc - 2;
+		//SKOK IZ PETLJE - 
+		
+		//znak = znak - 1;
+		Code.put(Code.load_1);
+		Code.loadConst(-1);
+		Code.put(Code.add);
+		Code.put(Code.store_1);
+		
+		//if( znak == 64 ) - then grana
+		Code.put(Code.load_1);
+		Code.loadConst(64);
+		Code.putFalseJump(Code.eq, 0);
+		//SKOK NA ELSE IF-A ZA ZNAK
+		int ifZnakElseAdr = Code.pc - 2;
+		Code.loadConst(90);
+		Code.put(Code.store_1);
+		
+		Code.fixup(ifZnakElseAdr);
+		
+		Code.put(Code.load_2);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.put(Code.store_2);
+		Code.putJump(for1StartAdr);
+
+		
+		
+		Code.fixup(for1EndAdr);
+		//BEZUSLOVAN SKOK AKO PRODJE PRVI IF DA SE PRESKOCI ELSE!
+		
+		Code.putJump(0);
+		int kraj = Code.pc - 2;
+		Code.fixup(if1ElseAdr);
+
+
+		//else prvog if - a => broj >= 0
+		
+		//for(int i = 1; i < broj; i++)
+		//u lokalnu promenljivu 2 smestam pocetnu vrednost za i 
+		Code.loadConst(0);
+		Code.put(Code.store_2);
+
+		int for2StartAdr = Code.pc;
+		Code.put(Code.load_n);
+		Code.put(Code.load_2);
+		Code.putFalseJump(Code.gt, 0);
+		int for2EndAdr = Code.pc - 2;
+		
+		//znak = znak + 1;
+		Code.put(Code.load_1);
+		Code.loadConst(+1);
+		Code.put(Code.add);
+		Code.put(Code.store_1);
+		
+		//if( znak == 90 ) - then grana
+		Code.put(Code.load_1);
+		Code.loadConst(90);
+		Code.putFalseJump(Code.eq, 0);
+		int ifZnak1ElseAdr = Code.pc - 2;
+		Code.loadConst(65);
+		Code.put(Code.store_1);
+		
+		Code.fixup(ifZnak1ElseAdr);
+		
+		Code.put(Code.load_2);
+		Code.loadConst(1);
+		Code.put(Code.add);
+		Code.put(Code.store_2);
+		Code.putJump(for2StartAdr);
+		
+		
+		Code.fixup(for2EndAdr);
+		
+		Code.fixup(kraj);
+		
+		
+		Code.put(Code.load_1);	//na stek stavljamo znak zbog return-a
+		Code.put(Code.exit);	//izlaz iz f-je
+	}
+	
+	
+}

@@ -1,0 +1,331 @@
+INFO  16:12:34,840 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  16:12:34,888 - #2 program
+INFO  16:12:34,889 - #18 test301
+INFO  16:12:34,889 - #16 const
+INFO  16:12:34,889 - #18 int
+INFO  16:12:34,889 - #18 nula
+INFO  16:12:34,890 - #12 =
+INFO  16:12:34,890 - #17 0
+INFO  16:12:34,890 - #5 ;
+INFO  16:12:34,890 - #16 const
+INFO  16:12:34,891 - #18 int
+INFO  16:12:34,891 - #18 jedan
+INFO  16:12:34,891 - #12 =
+INFO  16:12:34,891 - #17 1
+INFO  16:12:34,891 - #5 ;
+INFO  16:12:34,891 - #16 const
+INFO  16:12:34,891 - #18 int
+INFO  16:12:34,891 - #18 pet
+INFO  16:12:34,892 - #12 =
+INFO  16:12:34,892 - #17 5
+INFO  16:12:34,892 - #5 ;
+INFO  16:12:34,892 - #18 int
+INFO  16:12:34,892 - #18 niz
+INFO  16:12:34,892 - #23 [
+INFO  16:12:34,892 - #24 ]
+INFO  16:12:34,892 - #8 ,
+INFO  16:12:34,894 - #18 niz2
+INFO  16:12:34,894 - #23 [
+INFO  16:12:34,894 - #24 ]
+INFO  16:12:34,894 - #8 ,
+INFO  16:12:34,894 - #18 a
+INFO  16:12:34,894 - #8 ,
+INFO  16:12:34,894 - #18 b
+INFO  16:12:34,895 - #5 ;
+INFO  16:12:34,895 - #18 char
+INFO  16:12:34,895 - #18 nizch
+INFO  16:12:34,895 - #23 [
+INFO  16:12:34,895 - #24 ]
+INFO  16:12:34,895 - #5 ;
+INFO  16:12:34,895 - #18 char
+INFO  16:12:34,895 - #18 znak
+INFO  16:12:34,895 - #5 ;
+INFO  16:12:34,895 - #3 {
+INFO  16:12:34,895 - #13 void
+INFO  16:12:34,896 - #18 main
+INFO  16:12:34,896 - #6 (
+INFO  16:12:34,896 - #7 )
+INFO  16:12:34,896 - #18 int
+INFO  16:12:34,897 - #18 bodovi
+INFO  16:12:34,897 - #5 ;
+INFO  16:12:34,897 - #18 bool
+INFO  16:12:34,897 - #18 bt
+INFO  16:12:34,897 - #5 ;
+INFO  16:12:34,897 - #3 {
+INFO  16:12:34,897 - #18 znak
+INFO  16:12:34,898 - #12 =
+INFO  16:12:34,898 - #23 [
+INFO  16:12:34,898 - #19 A
+INFO  16:12:34,898 - #48 #
+INFO  16:12:34,898 - #17 2
+INFO  16:12:34,898 - #24 ]
+INFO  16:12:34,899 - #5 ;
+INFO  16:12:34,899 - #18 znak
+INFO  16:12:34,899 - #12 =
+INFO  16:12:34,900 - #23 [
+INFO  16:12:34,900 - #17 2
+INFO  16:12:34,900 - #48 #
+INFO  16:12:34,900 - #17 2
+INFO  16:12:34,900 - #24 ]
+INFO  16:12:34,900 - #5 ;
+INFO  16:12:34,900 - #18 znak
+INFO  16:12:34,900 - #12 =
+INFO  16:12:34,900 - #23 [
+INFO  16:12:34,900 - #19 A
+INFO  16:12:34,900 - #48 #
+INFO  16:12:34,900 - #19 a
+INFO  16:12:34,900 - #24 ]
+INFO  16:12:34,900 - #5 ;
+INFO  16:12:34,900 - #18 bodovi
+INFO  16:12:34,900 - #12 =
+INFO  16:12:34,900 - #17 0
+INFO  16:12:34,900 - #5 ;
+INFO  16:12:34,900 - #18 bodovi
+INFO  16:12:34,900 - #32 ++
+INFO  16:12:34,900 - #5 ;
+INFO  16:12:34,901 - #18 bodovi
+INFO  16:12:34,901 - #12 =
+INFO  16:12:34,901 - #18 bodovi
+INFO  16:12:34,901 - #11 +
+INFO  16:12:34,901 - #18 jedan
+INFO  16:12:34,902 - #5 ;
+INFO  16:12:34,902 - #18 bodovi
+INFO  16:12:34,902 - #12 =
+INFO  16:12:34,902 - #18 bodovi
+INFO  16:12:34,902 - #44 *
+INFO  16:12:34,902 - #18 pet
+INFO  16:12:34,903 - #5 ;
+INFO  16:12:34,903 - #18 bodovi
+INFO  16:12:34,903 - #33 --
+INFO  16:12:34,903 - #5 ;
+INFO  16:12:34,904 - #9 print
+INFO  16:12:34,904 - #6 (
+INFO  16:12:34,904 - #18 bodovi
+INFO  16:12:34,904 - #7 )
+INFO  16:12:34,904 - #5 ;
+INFO  16:12:34,904 - #18 niz
+INFO  16:12:34,905 - #12 =
+INFO  16:12:34,905 - #37 new
+INFO  16:12:34,905 - #18 int
+INFO  16:12:34,905 - #23 [
+INFO  16:12:34,905 - #17 3
+INFO  16:12:34,905 - #24 ]
+INFO  16:12:34,905 - #5 ;
+INFO  16:12:34,905 - #18 niz
+INFO  16:12:34,905 - #23 [
+INFO  16:12:34,906 - #18 nula
+INFO  16:12:34,906 - #24 ]
+INFO  16:12:34,906 - #12 =
+INFO  16:12:34,906 - #18 jedan
+INFO  16:12:34,906 - #5 ;
+INFO  16:12:34,906 - #18 niz
+INFO  16:12:34,907 - #23 [
+INFO  16:12:34,907 - #17 1
+INFO  16:12:34,907 - #24 ]
+INFO  16:12:34,907 - #12 =
+INFO  16:12:34,907 - #17 2
+INFO  16:12:34,907 - #5 ;
+INFO  16:12:34,907 - #18 niz
+INFO  16:12:34,907 - #23 [
+INFO  16:12:34,907 - #18 niz
+INFO  16:12:34,907 - #23 [
+INFO  16:12:34,907 - #18 jedan
+INFO  16:12:34,907 - #24 ]
+INFO  16:12:34,907 - #24 ]
+INFO  16:12:34,907 - #12 =
+INFO  16:12:34,907 - #18 niz
+INFO  16:12:34,907 - #23 [
+INFO  16:12:34,907 - #18 niz
+INFO  16:12:34,907 - #23 [
+INFO  16:12:34,907 - #17 0
+INFO  16:12:34,907 - #24 ]
+INFO  16:12:34,907 - #24 ]
+INFO  16:12:34,908 - #44 *
+INFO  16:12:34,908 - #17 3
+INFO  16:12:34,908 - #5 ;
+INFO  16:12:34,908 - #18 bodovi
+INFO  16:12:34,908 - #12 =
+INFO  16:12:34,908 - #18 niz
+INFO  16:12:34,908 - #23 [
+INFO  16:12:34,908 - #17 2
+INFO  16:12:34,908 - #24 ]
+INFO  16:12:34,908 - #45 /
+INFO  16:12:34,908 - #18 niz
+INFO  16:12:34,908 - #23 [
+INFO  16:12:34,908 - #17 0
+INFO  16:12:34,908 - #24 ]
+INFO  16:12:34,908 - #5 ;
+INFO  16:12:34,909 - #9 print
+INFO  16:12:34,909 - #6 (
+INFO  16:12:34,909 - #18 bodovi
+INFO  16:12:34,909 - #7 )
+INFO  16:12:34,909 - #5 ;
+INFO  16:12:34,909 - #9 print
+INFO  16:12:34,909 - #6 (
+INFO  16:12:34,909 - #18 niz
+INFO  16:12:34,911 - #23 [
+INFO  16:12:34,911 - #17 2
+INFO  16:12:34,911 - #24 ]
+INFO  16:12:34,911 - #7 )
+INFO  16:12:34,911 - #5 ;
+INFO  16:12:34,911 - #18 bt
+INFO  16:12:34,911 - #12 =
+INFO  16:12:34,911 - #18 niz
+INFO  16:12:34,911 - #30 .
+INFO  16:12:34,911 - #47 findAny
+INFO  16:12:34,911 - #6 (
+INFO  16:12:34,911 - #18 jedan
+INFO  16:12:34,911 - #11 +
+INFO  16:12:34,911 - #18 pet
+INFO  16:12:34,911 - #7 )
+INFO  16:12:34,911 - #5 ;
+INFO  16:12:34,911 - #18 nizch
+INFO  16:12:34,911 - #12 =
+INFO  16:12:34,911 - #37 new
+INFO  16:12:34,911 - #18 char
+INFO  16:12:34,912 - #23 [
+INFO  16:12:34,912 - #17 3
+INFO  16:12:34,912 - #24 ]
+INFO  16:12:34,912 - #5 ;
+INFO  16:12:34,912 - #18 nizch
+INFO  16:12:34,912 - #23 [
+INFO  16:12:34,912 - #17 0
+INFO  16:12:34,912 - #24 ]
+INFO  16:12:34,912 - #12 =
+INFO  16:12:34,912 - #19 a
+INFO  16:12:34,912 - #5 ;
+INFO  16:12:34,912 - #18 nizch
+INFO  16:12:34,912 - #23 [
+INFO  16:12:34,912 - #18 jedan
+INFO  16:12:34,912 - #24 ]
+INFO  16:12:34,912 - #12 =
+INFO  16:12:34,912 - #19 b
+INFO  16:12:34,912 - #5 ;
+INFO  16:12:34,912 - #18 nizch
+INFO  16:12:34,912 - #23 [
+INFO  16:12:34,912 - #18 pet
+INFO  16:12:34,912 - #36 -
+INFO  16:12:34,912 - #17 3
+INFO  16:12:34,913 - #24 ]
+INFO  16:12:34,913 - #12 =
+INFO  16:12:34,913 - #19 c
+INFO  16:12:34,913 - #5 ;
+INFO  16:12:34,913 - #9 print
+INFO  16:12:34,913 - #6 (
+INFO  16:12:34,913 - #18 nizch
+INFO  16:12:34,913 - #23 [
+INFO  16:12:34,913 - #17 1
+INFO  16:12:34,913 - #24 ]
+INFO  16:12:34,913 - #7 )
+INFO  16:12:34,913 - #5 ;
+INFO  16:12:34,913 - #9 print
+INFO  16:12:34,913 - #6 (
+INFO  16:12:34,913 - #18 nizch
+INFO  16:12:34,913 - #23 [
+INFO  16:12:34,913 - #18 jedan
+INFO  16:12:34,913 - #44 *
+INFO  16:12:34,913 - #17 2
+INFO  16:12:34,913 - #24 ]
+INFO  16:12:34,913 - #7 )
+INFO  16:12:34,913 - #5 ;
+INFO  16:12:34,913 - #28 read
+INFO  16:12:34,913 - #6 (
+INFO  16:12:34,913 - #18 bodovi
+INFO  16:12:34,913 - #7 )
+INFO  16:12:34,914 - #5 ;
+INFO  16:12:34,914 - #18 bodovi
+INFO  16:12:34,914 - #12 =
+INFO  16:12:34,914 - #36 -
+INFO  16:12:34,914 - #18 bodovi
+INFO  16:12:34,914 - #11 +
+INFO  16:12:34,914 - #6 (
+INFO  16:12:34,914 - #18 pet
+INFO  16:12:34,914 - #44 *
+INFO  16:12:34,914 - #18 a
+INFO  16:12:34,914 - #45 /
+INFO  16:12:34,914 - #17 2
+INFO  16:12:34,914 - #36 -
+INFO  16:12:34,914 - #18 jedan
+INFO  16:12:34,914 - #7 )
+INFO  16:12:34,914 - #44 *
+INFO  16:12:34,914 - #18 bodovi
+INFO  16:12:34,914 - #36 -
+INFO  16:12:34,914 - #6 (
+INFO  16:12:34,914 - #17 3
+INFO  16:12:34,914 - #46 %
+INFO  16:12:34,915 - #17 2
+INFO  16:12:34,915 - #11 +
+INFO  16:12:34,915 - #17 3
+INFO  16:12:34,915 - #44 *
+INFO  16:12:34,915 - #17 2
+INFO  16:12:34,916 - #36 -
+INFO  16:12:34,916 - #17 3
+INFO  16:12:34,916 - #7 )
+INFO  16:12:34,916 - #5 ;
+INFO  16:12:34,916 - #9 print
+INFO  16:12:34,916 - #6 (
+INFO  16:12:34,916 - #18 bodovi
+INFO  16:12:34,916 - #7 )
+INFO  16:12:34,916 - #5 ;
+INFO  16:12:34,916 - #9 print
+INFO  16:12:34,916 - #6 (
+INFO  16:12:34,916 - #18 bt
+INFO  16:12:34,916 - #7 )
+INFO  16:12:34,916 - #5 ;
+INFO  16:12:34,916 - #4 }
+INFO  16:12:34,916 - #4 }
+INFO  16:12:34,925 - Koriscenje globalne promenljive Var znak: char, 5, 0  na liniji 17
+ERROR 16:12:34,925 - Drugi parametar nije tipa int  na liniji 17
+INFO  16:12:34,925 - Koriscenje globalne promenljive Var znak: char, 5, 0  na liniji 18
+ERROR 16:12:34,926 - Prvi parametar nije tipa char  na liniji 18
+ERROR 16:12:34,926 - Drugi parametar nije tipa int  na liniji 18
+INFO  16:12:34,926 - Koriscenje globalne promenljive Var znak: char, 5, 0  na liniji 19
+ERROR 16:12:34,926 - Drugi parametar nije tipa int  na liniji 19
+INFO  16:12:34,926 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 20
+INFO  16:12:34,926 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 21
+INFO  16:12:34,926 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 22
+INFO  16:12:34,926 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 22
+INFO  16:12:34,926 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 22
+INFO  16:12:34,927 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 23
+INFO  16:12:34,927 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 23
+INFO  16:12:34,927 - Koriscenje konstante Con pet: int, 5, 0  na liniji 23
+INFO  16:12:34,927 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 24
+INFO  16:12:34,927 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 25
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 28
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 29
+INFO  16:12:34,927 - Koriscenje konstante Con nula: int, 0, 0  na liniji 29
+INFO  16:12:34,927 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 29
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 30
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 31
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 31
+INFO  16:12:34,927 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 31
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 31
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 31
+INFO  16:12:34,927 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 32
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 32
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 32
+INFO  16:12:34,927 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 33
+INFO  16:12:34,927 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 34
+INFO  16:12:34,928 - Koriscenje lokalne promenljive Var bt: , 1, 1  na liniji 36
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var niz: Arr of int, 0, 0  na liniji 36
+INFO  16:12:34,928 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 36
+INFO  16:12:34,928 - Koriscenje konstante Con pet: int, 5, 0  na liniji 36
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var nizch: Arr of char, 4, 0  na liniji 41
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var nizch: Arr of char, 4, 0  na liniji 42
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var nizch: Arr of char, 4, 0  na liniji 43
+INFO  16:12:34,928 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 43
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var nizch: Arr of char, 4, 0  na liniji 44
+INFO  16:12:34,928 - Koriscenje konstante Con pet: int, 5, 0  na liniji 44
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var nizch: Arr of char, 4, 0  na liniji 45
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var nizch: Arr of char, 4, 0  na liniji 46
+INFO  16:12:34,928 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 46
+INFO  16:12:34,928 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 49
+INFO  16:12:34,928 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 50
+INFO  16:12:34,928 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 50
+INFO  16:12:34,928 - Koriscenje konstante Con pet: int, 5, 0  na liniji 50
+INFO  16:12:34,928 - Koriscenje globalne promenljive Var a: int, 2, 0  na liniji 50
+INFO  16:12:34,928 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 50
+INFO  16:12:34,928 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 50
+INFO  16:12:34,928 - Koriscenje lokalne promenljive Var bodovi: int, 0, 1  na liniji 51
+INFO  16:12:34,929 - Koriscenje lokalne promenljive Var bt: , 1, 1  na liniji 52
+ERROR 16:12:34,929 - Parsiranje NIJE uspesno zavrseno!

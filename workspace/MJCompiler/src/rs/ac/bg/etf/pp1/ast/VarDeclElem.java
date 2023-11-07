@@ -1,0 +1,89 @@
+// generated with ast extension for cup
+// version 0.8
+// 23/7/2023 22:39:41
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class VarDeclElem implements SyntaxNode {
+
+    private SyntaxNode parent;
+    private int line;
+    private String variableName;
+    private LeftRightSquareBracket LeftRightSquareBracket;
+
+    public VarDeclElem (String variableName, LeftRightSquareBracket LeftRightSquareBracket) {
+        this.variableName=variableName;
+        this.LeftRightSquareBracket=LeftRightSquareBracket;
+        if(LeftRightSquareBracket!=null) LeftRightSquareBracket.setParent(this);
+    }
+
+    public String getVariableName() {
+        return variableName;
+    }
+
+    public void setVariableName(String variableName) {
+        this.variableName=variableName;
+    }
+
+    public LeftRightSquareBracket getLeftRightSquareBracket() {
+        return LeftRightSquareBracket;
+    }
+
+    public void setLeftRightSquareBracket(LeftRightSquareBracket LeftRightSquareBracket) {
+        this.LeftRightSquareBracket=LeftRightSquareBracket;
+    }
+
+    public SyntaxNode getParent() {
+        return parent;
+    }
+
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line=line;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(LeftRightSquareBracket!=null) LeftRightSquareBracket.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(LeftRightSquareBracket!=null) LeftRightSquareBracket.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(LeftRightSquareBracket!=null) LeftRightSquareBracket.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("VarDeclElem(\n");
+
+        buffer.append(" "+tab+variableName);
+        buffer.append("\n");
+
+        if(LeftRightSquareBracket!=null)
+            buffer.append(LeftRightSquareBracket.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [VarDeclElem]");
+        return buffer.toString();
+    }
+}

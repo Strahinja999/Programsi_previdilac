@@ -1,0 +1,78 @@
+// generated with ast extension for cup
+// version 0.8
+// 23/7/2023 21:43:44
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class ConstructorListElem extends ConstructorList {
+
+    private ConstructorList ConstructorList;
+    private ConstructorDecl ConstructorDecl;
+
+    public ConstructorListElem (ConstructorList ConstructorList, ConstructorDecl ConstructorDecl) {
+        this.ConstructorList=ConstructorList;
+        if(ConstructorList!=null) ConstructorList.setParent(this);
+        this.ConstructorDecl=ConstructorDecl;
+        if(ConstructorDecl!=null) ConstructorDecl.setParent(this);
+    }
+
+    public ConstructorList getConstructorList() {
+        return ConstructorList;
+    }
+
+    public void setConstructorList(ConstructorList ConstructorList) {
+        this.ConstructorList=ConstructorList;
+    }
+
+    public ConstructorDecl getConstructorDecl() {
+        return ConstructorDecl;
+    }
+
+    public void setConstructorDecl(ConstructorDecl ConstructorDecl) {
+        this.ConstructorDecl=ConstructorDecl;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(ConstructorList!=null) ConstructorList.accept(visitor);
+        if(ConstructorDecl!=null) ConstructorDecl.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(ConstructorList!=null) ConstructorList.traverseTopDown(visitor);
+        if(ConstructorDecl!=null) ConstructorDecl.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(ConstructorList!=null) ConstructorList.traverseBottomUp(visitor);
+        if(ConstructorDecl!=null) ConstructorDecl.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("ConstructorListElem(\n");
+
+        if(ConstructorList!=null)
+            buffer.append(ConstructorList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(ConstructorDecl!=null)
+            buffer.append(ConstructorDecl.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [ConstructorListElem]");
+        return buffer.toString();
+    }
+}

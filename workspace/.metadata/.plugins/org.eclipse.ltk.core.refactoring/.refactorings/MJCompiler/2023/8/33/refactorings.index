@@ -1,0 +1,19 @@
+1692204217557	Delete element
+1692226296976	Delete element
+1692226333935	Delete element
+1692297807122	Delete element
+1692297987022	Delete element
+1692359534777	Rename field 'lastVisited'
+1692359811180	Delete element
+1692360025403	Delete element
+1692362106958	Delete element
+1692362245805	Rename local variable 'lastVisitedDesignator'
+1692363611634	Delete element
+1692365257518	Extract method 'enterFunction'
+1692367327126	Rename local variable 'Designator'
+1692367428898	Rename local variable 'designator'
+1692367490666	Extract local variable 'obj'
+1692369810026	Extract local variable 'len'
+1692370954092	Delete element
+1692371230923	Delete element
+1692371493582	Rename local variable 'designatorList'

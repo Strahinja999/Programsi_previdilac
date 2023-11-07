@@ -1,0 +1,67 @@
+INFO  19:23:38,303 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  19:23:38,333 - #2 program
+INFO  19:23:38,333 - #18 test301
+INFO  19:23:38,333 - #16 const
+INFO  19:23:38,334 - #18 int
+INFO  19:23:38,334 - #18 nula
+INFO  19:23:38,334 - #12 =
+INFO  19:23:38,334 - #17 0
+INFO  19:23:38,334 - #5 ;
+INFO  19:23:38,335 - #16 const
+INFO  19:23:38,335 - #18 int
+INFO  19:23:38,335 - #18 jedan
+INFO  19:23:38,336 - #12 =
+INFO  19:23:38,336 - #17 1
+INFO  19:23:38,336 - #5 ;
+INFO  19:23:38,336 - #16 const
+INFO  19:23:38,336 - #18 int
+INFO  19:23:38,336 - #18 pet
+INFO  19:23:38,336 - #12 =
+INFO  19:23:38,336 - #17 5
+INFO  19:23:38,336 - #5 ;
+INFO  19:23:38,336 - #18 int
+INFO  19:23:38,336 - #18 niz
+INFO  19:23:38,336 - #23 [
+INFO  19:23:38,337 - #24 ]
+INFO  19:23:38,337 - #8 ,
+INFO  19:23:38,337 - #18 niz2
+INFO  19:23:38,337 - #23 [
+INFO  19:23:38,338 - #24 ]
+INFO  19:23:38,338 - #8 ,
+INFO  19:23:38,338 - #18 a
+INFO  19:23:38,338 - #8 ,
+INFO  19:23:38,338 - #18 b
+INFO  19:23:38,338 - #5 ;
+INFO  19:23:38,338 - #18 char
+INFO  19:23:38,338 - #18 nizch
+INFO  19:23:38,338 - #23 [
+INFO  19:23:38,338 - #24 ]
+INFO  19:23:38,338 - #5 ;
+INFO  19:23:38,338 - #3 {
+INFO  19:23:38,339 - #13 void
+INFO  19:23:38,339 - #18 main
+INFO  19:23:38,339 - #6 (
+INFO  19:23:38,339 - #7 )
+INFO  19:23:38,340 - #18 char
+INFO  19:23:38,340 - #18 znak
+INFO  19:23:38,340 - #5 ;
+INFO  19:23:38,340 - #3 {
+INFO  19:23:38,340 - #18 znak
+INFO  19:23:38,341 - #12 =
+INFO  19:23:38,341 - #23 [
+INFO  19:23:38,341 - #19 B
+INFO  19:23:38,341 - #48 #
+INFO  19:23:38,341 - #17 27
+INFO  19:23:38,341 - #24 ]
+INFO  19:23:38,341 - #5 ;
+INFO  19:23:38,342 - #9 print
+INFO  19:23:38,342 - #6 (
+INFO  19:23:38,342 - #18 znak
+INFO  19:23:38,342 - #7 )
+INFO  19:23:38,343 - #5 ;
+INFO  19:23:38,343 - #4 }
+INFO  19:23:38,343 - #4 }
+INFO  19:23:38,350 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 16
+INFO  19:23:38,350 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 17
+INFO  19:23:38,350 - Generating bytecode file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\program.obj
+INFO  19:23:38,354 - Parsiranje uspesno zavrseno!

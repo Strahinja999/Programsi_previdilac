@@ -1,0 +1,124 @@
+INFO  00:00:18,967 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  00:00:18,993 - #2 program
+INFO  00:00:18,994 - #18 test301
+INFO  00:00:18,994 - #16 const
+INFO  00:00:18,994 - #18 int
+INFO  00:00:18,995 - #18 nula
+INFO  00:00:18,995 - #12 =
+INFO  00:00:18,995 - #17 0
+INFO  00:00:18,995 - #5 ;
+INFO  00:00:18,996 - #16 const
+INFO  00:00:18,996 - #18 int
+INFO  00:00:18,996 - #18 jedan
+INFO  00:00:18,996 - #12 =
+INFO  00:00:18,996 - #17 1
+INFO  00:00:18,996 - #5 ;
+INFO  00:00:18,996 - #16 const
+INFO  00:00:18,996 - #18 int
+INFO  00:00:18,997 - #18 dva
+INFO  00:00:18,997 - #12 =
+INFO  00:00:18,997 - #17 2
+INFO  00:00:18,997 - #5 ;
+INFO  00:00:18,997 - #16 const
+INFO  00:00:18,997 - #18 int
+INFO  00:00:18,997 - #18 tri
+INFO  00:00:18,997 - #12 =
+INFO  00:00:18,997 - #17 3
+INFO  00:00:18,997 - #5 ;
+INFO  00:00:18,997 - #16 const
+INFO  00:00:18,997 - #18 int
+INFO  00:00:18,997 - #18 cetiri
+INFO  00:00:18,998 - #12 =
+INFO  00:00:18,998 - #17 4
+INFO  00:00:18,998 - #5 ;
+INFO  00:00:18,998 - #16 const
+INFO  00:00:18,998 - #18 int
+INFO  00:00:18,998 - #18 pet
+INFO  00:00:18,998 - #12 =
+INFO  00:00:18,998 - #17 5
+INFO  00:00:18,998 - #5 ;
+INFO  00:00:18,998 - #18 int
+INFO  00:00:18,998 - #18 niz2
+INFO  00:00:18,998 - #23 [
+INFO  00:00:18,998 - #24 ]
+INFO  00:00:18,999 - #8 ,
+INFO  00:00:19,000 - #18 a
+INFO  00:00:19,000 - #8 ,
+INFO  00:00:19,001 - #18 b
+INFO  00:00:19,001 - #5 ;
+INFO  00:00:19,001 - #18 char
+INFO  00:00:19,001 - #18 nizch
+INFO  00:00:19,001 - #23 [
+INFO  00:00:19,001 - #24 ]
+INFO  00:00:19,001 - #5 ;
+INFO  00:00:19,001 - #3 {
+INFO  00:00:19,001 - #13 void
+INFO  00:00:19,001 - #18 main
+INFO  00:00:19,002 - #6 (
+INFO  00:00:19,002 - #7 )
+INFO  00:00:19,002 - #18 int
+INFO  00:00:19,002 - #18 zbir
+INFO  00:00:19,002 - #5 ;
+INFO  00:00:19,002 - #18 int
+INFO  00:00:19,003 - #18 niz
+INFO  00:00:19,003 - #23 [
+INFO  00:00:19,003 - #24 ]
+INFO  00:00:19,003 - #5 ;
+INFO  00:00:19,003 - #3 {
+INFO  00:00:19,003 - #18 niz
+INFO  00:00:19,003 - #12 =
+INFO  00:00:19,003 - #37 new
+INFO  00:00:19,004 - #18 int
+INFO  00:00:19,004 - #23 [
+INFO  00:00:19,004 - #17 4
+INFO  00:00:19,004 - #24 ]
+INFO  00:00:19,004 - #5 ;
+INFO  00:00:19,004 - #18 niz
+INFO  00:00:19,005 - #23 [
+INFO  00:00:19,005 - #17 0
+INFO  00:00:19,005 - #24 ]
+INFO  00:00:19,005 - #12 =
+INFO  00:00:19,005 - #18 jedan
+INFO  00:00:19,005 - #5 ;
+INFO  00:00:19,005 - #18 niz
+INFO  00:00:19,006 - #23 [
+INFO  00:00:19,006 - #17 1
+INFO  00:00:19,006 - #24 ]
+INFO  00:00:19,006 - #12 =
+INFO  00:00:19,006 - #18 dva
+INFO  00:00:19,006 - #5 ;
+INFO  00:00:19,006 - #18 niz
+INFO  00:00:19,006 - #23 [
+INFO  00:00:19,006 - #17 2
+INFO  00:00:19,006 - #24 ]
+INFO  00:00:19,006 - #12 =
+INFO  00:00:19,006 - #18 tri
+INFO  00:00:19,006 - #5 ;
+INFO  00:00:19,006 - #18 niz
+INFO  00:00:19,006 - #23 [
+INFO  00:00:19,006 - #17 3
+INFO  00:00:19,006 - #24 ]
+INFO  00:00:19,006 - #12 =
+INFO  00:00:19,006 - #18 cetiri
+INFO  00:00:19,006 - #5 ;
+INFO  00:00:19,006 - #18 zbir
+INFO  00:00:19,007 - #12 =
+INFO  00:00:19,007 - #18 niz
+INFO  00:00:19,007 - #49 @
+INFO  00:00:19,007 - #17 3
+INFO  00:00:19,007 - #5 ;
+INFO  00:00:19,007 - #4 }
+INFO  00:00:19,007 - #4 }
+INFO  00:00:19,014 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 19
+INFO  00:00:19,014 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 20
+INFO  00:00:19,014 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 20
+INFO  00:00:19,014 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 21
+INFO  00:00:19,014 - Koriscenje konstante Con dva: int, 2, 0  na liniji 21
+INFO  00:00:19,014 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 22
+INFO  00:00:19,014 - Koriscenje konstante Con tri: int, 3, 0  na liniji 22
+INFO  00:00:19,014 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 23
+INFO  00:00:19,014 - Koriscenje konstante Con cetiri: int, 4, 0  na liniji 23
+INFO  00:00:19,014 - Koriscenje lokalne promenljive Var zbir: int, 0, 1  na liniji 24
+INFO  00:00:19,015 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 24
+INFO  00:00:19,015 - Generating bytecode file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\program.obj
+INFO  00:00:19,018 - Parsiranje uspesno zavrseno!

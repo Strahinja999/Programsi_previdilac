@@ -1,0 +1,118 @@
+INFO  19:20:37,755 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  19:20:37,786 - #2 program
+INFO  19:20:37,786 - #18 test301
+INFO  19:20:37,786 - #16 const
+INFO  19:20:37,787 - #18 int
+INFO  19:20:37,787 - #18 nula
+INFO  19:20:37,787 - #12 =
+INFO  19:20:37,787 - #17 0
+INFO  19:20:37,787 - #5 ;
+INFO  19:20:37,788 - #16 const
+INFO  19:20:37,788 - #18 int
+INFO  19:20:37,788 - #18 jedan
+INFO  19:20:37,788 - #12 =
+INFO  19:20:37,789 - #17 1
+INFO  19:20:37,789 - #5 ;
+INFO  19:20:37,789 - #16 const
+INFO  19:20:37,789 - #18 int
+INFO  19:20:37,789 - #18 pet
+INFO  19:20:37,789 - #12 =
+INFO  19:20:37,789 - #17 5
+INFO  19:20:37,789 - #5 ;
+INFO  19:20:37,789 - #18 int
+INFO  19:20:37,789 - #18 niz
+INFO  19:20:37,789 - #23 [
+INFO  19:20:37,789 - #24 ]
+INFO  19:20:37,789 - #8 ,
+INFO  19:20:37,790 - #18 niz2
+INFO  19:20:37,790 - #23 [
+INFO  19:20:37,790 - #24 ]
+INFO  19:20:37,790 - #8 ,
+INFO  19:20:37,791 - #18 a
+INFO  19:20:37,791 - #8 ,
+INFO  19:20:37,791 - #18 b
+INFO  19:20:37,791 - #5 ;
+INFO  19:20:37,791 - #18 char
+INFO  19:20:37,791 - #18 nizch
+INFO  19:20:37,791 - #23 [
+INFO  19:20:37,791 - #24 ]
+INFO  19:20:37,791 - #5 ;
+INFO  19:20:37,791 - #3 {
+INFO  19:20:37,791 - #13 void
+INFO  19:20:37,792 - #18 main
+INFO  19:20:37,792 - #6 (
+INFO  19:20:37,792 - #7 )
+INFO  19:20:37,792 - #18 char
+INFO  19:20:37,793 - #18 znak
+INFO  19:20:37,793 - #5 ;
+INFO  19:20:37,793 - #3 {
+INFO  19:20:37,793 - #18 znak
+INFO  19:20:37,793 - #12 =
+INFO  19:20:37,793 - #23 [
+INFO  19:20:37,794 - #19 A
+INFO  19:20:37,794 - #48 #
+INFO  19:20:37,794 - #17 2
+INFO  19:20:37,794 - #24 ]
+INFO  19:20:37,794 - #5 ;
+INFO  19:20:37,795 - #9 print
+INFO  19:20:37,795 - #6 (
+INFO  19:20:37,795 - #18 znak
+INFO  19:20:37,795 - #7 )
+INFO  19:20:37,796 - #5 ;
+INFO  19:20:37,796 - #18 znak
+INFO  19:20:37,796 - #12 =
+INFO  19:20:37,796 - #23 [
+INFO  19:20:37,796 - #19 B
+INFO  19:20:37,796 - #48 #
+INFO  19:20:37,796 - #36 -
+INFO  19:20:37,796 - #17 2
+INFO  19:20:37,796 - #24 ]
+INFO  19:20:37,796 - #5 ;
+INFO  19:20:37,796 - #9 print
+INFO  19:20:37,796 - #6 (
+INFO  19:20:37,796 - #18 znak
+INFO  19:20:37,796 - #7 )
+INFO  19:20:37,796 - #5 ;
+INFO  19:20:37,796 - #18 znak
+INFO  19:20:37,796 - #12 =
+INFO  19:20:37,796 - #23 [
+INFO  19:20:37,796 - #23 [
+INFO  19:20:37,797 - #19 A
+INFO  19:20:37,797 - #48 #
+INFO  19:20:37,797 - #17 2
+INFO  19:20:37,797 - #24 ]
+INFO  19:20:37,797 - #48 #
+INFO  19:20:37,797 - #36 -
+INFO  19:20:37,797 - #17 3
+INFO  19:20:37,797 - #24 ]
+INFO  19:20:37,797 - #5 ;
+INFO  19:20:37,797 - #9 print
+INFO  19:20:37,797 - #6 (
+INFO  19:20:37,797 - #18 znak
+INFO  19:20:37,797 - #7 )
+INFO  19:20:37,797 - #5 ;
+INFO  19:20:37,797 - #18 znak
+INFO  19:20:37,797 - #12 =
+INFO  19:20:37,797 - #23 [
+INFO  19:20:37,797 - #19 B
+INFO  19:20:37,797 - #48 #
+INFO  19:20:37,797 - #17 27
+INFO  19:20:37,797 - #24 ]
+INFO  19:20:37,798 - #5 ;
+INFO  19:20:37,798 - #9 print
+INFO  19:20:37,798 - #6 (
+INFO  19:20:37,798 - #18 znak
+INFO  19:20:37,798 - #7 )
+INFO  19:20:37,798 - #5 ;
+INFO  19:20:37,798 - #4 }
+INFO  19:20:37,798 - #4 }
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 15
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 16
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 17
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 18
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 19
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 20
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 21
+INFO  19:20:37,805 - Koriscenje lokalne promenljive Var znak: char, 0, 1  na liniji 22
+INFO  19:20:37,805 - Generating bytecode file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\program.obj
+INFO  19:20:37,807 - Parsiranje uspesno zavrseno!

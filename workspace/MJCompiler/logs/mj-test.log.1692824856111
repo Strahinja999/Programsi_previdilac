@@ -1,0 +1,129 @@
+INFO  23:06:13,854 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  23:06:13,882 - #2 program
+INFO  23:06:13,882 - #18 test301
+INFO  23:06:13,882 - #16 const
+INFO  23:06:13,882 - #18 int
+INFO  23:06:13,883 - #18 nula
+INFO  23:06:13,883 - #12 =
+INFO  23:06:13,883 - #17 0
+INFO  23:06:13,883 - #5 ;
+INFO  23:06:13,884 - #16 const
+INFO  23:06:13,884 - #18 int
+INFO  23:06:13,884 - #18 jedan
+INFO  23:06:13,884 - #12 =
+INFO  23:06:13,884 - #17 1
+INFO  23:06:13,884 - #5 ;
+INFO  23:06:13,884 - #16 const
+INFO  23:06:13,884 - #18 int
+INFO  23:06:13,884 - #18 dva
+INFO  23:06:13,884 - #12 =
+INFO  23:06:13,885 - #17 2
+INFO  23:06:13,885 - #5 ;
+INFO  23:06:13,885 - #16 const
+INFO  23:06:13,885 - #18 int
+INFO  23:06:13,885 - #18 tri
+INFO  23:06:13,885 - #12 =
+INFO  23:06:13,885 - #17 3
+INFO  23:06:13,885 - #5 ;
+INFO  23:06:13,885 - #16 const
+INFO  23:06:13,885 - #18 int
+INFO  23:06:13,885 - #18 cetiri
+INFO  23:06:13,885 - #12 =
+INFO  23:06:13,885 - #17 4
+INFO  23:06:13,885 - #5 ;
+INFO  23:06:13,885 - #16 const
+INFO  23:06:13,886 - #18 int
+INFO  23:06:13,886 - #18 pet
+INFO  23:06:13,886 - #12 =
+INFO  23:06:13,886 - #17 5
+INFO  23:06:13,886 - #5 ;
+INFO  23:06:13,886 - #18 int
+INFO  23:06:13,886 - #18 niz2
+INFO  23:06:13,886 - #23 [
+INFO  23:06:13,886 - #24 ]
+INFO  23:06:13,886 - #8 ,
+INFO  23:06:13,887 - #18 a
+INFO  23:06:13,887 - #8 ,
+INFO  23:06:13,887 - #18 b
+INFO  23:06:13,887 - #5 ;
+INFO  23:06:13,887 - #18 char
+INFO  23:06:13,888 - #18 nizch
+INFO  23:06:13,888 - #23 [
+INFO  23:06:13,888 - #24 ]
+INFO  23:06:13,888 - #5 ;
+INFO  23:06:13,888 - #3 {
+INFO  23:06:13,888 - #13 void
+INFO  23:06:13,888 - #18 main
+INFO  23:06:13,889 - #6 (
+INFO  23:06:13,889 - #7 )
+INFO  23:06:13,889 - #18 int
+INFO  23:06:13,889 - #18 maximum
+INFO  23:06:13,889 - #5 ;
+INFO  23:06:13,889 - #18 int
+INFO  23:06:13,890 - #18 niz
+INFO  23:06:13,890 - #23 [
+INFO  23:06:13,890 - #24 ]
+INFO  23:06:13,890 - #5 ;
+INFO  23:06:13,890 - #3 {
+INFO  23:06:13,890 - #18 niz
+INFO  23:06:13,890 - #12 =
+INFO  23:06:13,890 - #37 new
+INFO  23:06:13,891 - #18 int
+INFO  23:06:13,891 - #23 [
+INFO  23:06:13,891 - #17 4
+INFO  23:06:13,891 - #24 ]
+INFO  23:06:13,891 - #5 ;
+INFO  23:06:13,891 - #18 niz
+INFO  23:06:13,892 - #23 [
+INFO  23:06:13,892 - #17 0
+INFO  23:06:13,892 - #24 ]
+INFO  23:06:13,892 - #12 =
+INFO  23:06:13,892 - #18 jedan
+INFO  23:06:13,892 - #5 ;
+INFO  23:06:13,892 - #18 niz
+INFO  23:06:13,893 - #23 [
+INFO  23:06:13,893 - #17 1
+INFO  23:06:13,893 - #24 ]
+INFO  23:06:13,893 - #12 =
+INFO  23:06:13,893 - #18 dva
+INFO  23:06:13,893 - #5 ;
+INFO  23:06:13,893 - #18 niz
+INFO  23:06:13,893 - #23 [
+INFO  23:06:13,893 - #17 2
+INFO  23:06:13,893 - #24 ]
+INFO  23:06:13,893 - #12 =
+INFO  23:06:13,893 - #18 tri
+INFO  23:06:13,893 - #5 ;
+INFO  23:06:13,893 - #18 niz
+INFO  23:06:13,893 - #23 [
+INFO  23:06:13,893 - #17 3
+INFO  23:06:13,893 - #24 ]
+INFO  23:06:13,893 - #12 =
+INFO  23:06:13,893 - #18 cetiri
+INFO  23:06:13,893 - #5 ;
+INFO  23:06:13,894 - #18 maximum
+INFO  23:06:13,894 - #12 =
+INFO  23:06:13,894 - #51 max
+INFO  23:06:13,894 - #18 niz
+INFO  23:06:13,894 - #5 ;
+INFO  23:06:13,894 - #9 print
+INFO  23:06:13,894 - #6 (
+INFO  23:06:13,894 - #18 maximum
+INFO  23:06:13,894 - #7 )
+INFO  23:06:13,894 - #5 ;
+INFO  23:06:13,894 - #4 }
+INFO  23:06:13,894 - #4 }
+INFO  23:06:13,901 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 19
+INFO  23:06:13,901 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 20
+INFO  23:06:13,901 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 20
+INFO  23:06:13,901 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 21
+INFO  23:06:13,901 - Koriscenje konstante Con dva: int, 2, 0  na liniji 21
+INFO  23:06:13,901 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 22
+INFO  23:06:13,901 - Koriscenje konstante Con tri: int, 3, 0  na liniji 22
+INFO  23:06:13,901 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 23
+INFO  23:06:13,902 - Koriscenje konstante Con cetiri: int, 4, 0  na liniji 23
+INFO  23:06:13,902 - Koriscenje lokalne promenljive Var maximum: int, 0, 1  na liniji 25
+INFO  23:06:13,902 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 25
+INFO  23:06:13,902 - Koriscenje lokalne promenljive Var maximum: int, 0, 1  na liniji 26
+INFO  23:06:13,902 - Generating bytecode file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\program.obj
+INFO  23:06:13,906 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,78 @@
+// generated with ast extension for cup
+// version 0.8
+// 23/7/2023 21:43:44
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class VarDeclarationList extends VarDeclElemList {
+
+    private VarDeclElemList VarDeclElemList;
+    private VarDeclElem VarDeclElem;
+
+    public VarDeclarationList (VarDeclElemList VarDeclElemList, VarDeclElem VarDeclElem) {
+        this.VarDeclElemList=VarDeclElemList;
+        if(VarDeclElemList!=null) VarDeclElemList.setParent(this);
+        this.VarDeclElem=VarDeclElem;
+        if(VarDeclElem!=null) VarDeclElem.setParent(this);
+    }
+
+    public VarDeclElemList getVarDeclElemList() {
+        return VarDeclElemList;
+    }
+
+    public void setVarDeclElemList(VarDeclElemList VarDeclElemList) {
+        this.VarDeclElemList=VarDeclElemList;
+    }
+
+    public VarDeclElem getVarDeclElem() {
+        return VarDeclElem;
+    }
+
+    public void setVarDeclElem(VarDeclElem VarDeclElem) {
+        this.VarDeclElem=VarDeclElem;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(VarDeclElemList!=null) VarDeclElemList.accept(visitor);
+        if(VarDeclElem!=null) VarDeclElem.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(VarDeclElemList!=null) VarDeclElemList.traverseTopDown(visitor);
+        if(VarDeclElem!=null) VarDeclElem.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(VarDeclElemList!=null) VarDeclElemList.traverseBottomUp(visitor);
+        if(VarDeclElem!=null) VarDeclElem.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("VarDeclarationList(\n");
+
+        if(VarDeclElemList!=null)
+            buffer.append(VarDeclElemList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(VarDeclElem!=null)
+            buffer.append(VarDeclElem.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [VarDeclarationList]");
+        return buffer.toString();
+    }
+}

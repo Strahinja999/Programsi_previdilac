@@ -1,0 +1,160 @@
+INFO  22:10:02,028 - Compiling source file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\test301.mj
+INFO  22:10:02,054 - #2 program
+INFO  22:10:02,054 - #18 test301
+INFO  22:10:02,054 - #16 const
+INFO  22:10:02,055 - #18 int
+INFO  22:10:02,055 - #18 nula
+INFO  22:10:02,056 - #12 =
+INFO  22:10:02,056 - #17 0
+INFO  22:10:02,056 - #5 ;
+INFO  22:10:02,056 - #16 const
+INFO  22:10:02,057 - #18 int
+INFO  22:10:02,057 - #18 jedan
+INFO  22:10:02,057 - #12 =
+INFO  22:10:02,057 - #17 1
+INFO  22:10:02,057 - #5 ;
+INFO  22:10:02,057 - #16 const
+INFO  22:10:02,057 - #18 int
+INFO  22:10:02,057 - #18 dva
+INFO  22:10:02,057 - #12 =
+INFO  22:10:02,057 - #17 2
+INFO  22:10:02,057 - #5 ;
+INFO  22:10:02,057 - #16 const
+INFO  22:10:02,058 - #18 int
+INFO  22:10:02,058 - #18 tri
+INFO  22:10:02,058 - #12 =
+INFO  22:10:02,058 - #17 3
+INFO  22:10:02,058 - #5 ;
+INFO  22:10:02,058 - #16 const
+INFO  22:10:02,058 - #18 int
+INFO  22:10:02,058 - #18 cetiri
+INFO  22:10:02,058 - #12 =
+INFO  22:10:02,058 - #17 4
+INFO  22:10:02,058 - #5 ;
+INFO  22:10:02,058 - #16 const
+INFO  22:10:02,058 - #18 int
+INFO  22:10:02,058 - #18 pet
+INFO  22:10:02,058 - #12 =
+INFO  22:10:02,058 - #17 5
+INFO  22:10:02,059 - #5 ;
+INFO  22:10:02,059 - #18 int
+INFO  22:10:02,059 - #18 niz2
+INFO  22:10:02,059 - #23 [
+INFO  22:10:02,059 - #24 ]
+INFO  22:10:02,059 - #8 ,
+INFO  22:10:02,060 - #18 a
+INFO  22:10:02,060 - #8 ,
+INFO  22:10:02,060 - #18 b
+INFO  22:10:02,060 - #5 ;
+INFO  22:10:02,060 - #18 char
+INFO  22:10:02,060 - #18 nizch
+INFO  22:10:02,060 - #23 [
+INFO  22:10:02,061 - #24 ]
+INFO  22:10:02,061 - #5 ;
+INFO  22:10:02,061 - #3 {
+INFO  22:10:02,061 - #13 void
+INFO  22:10:02,061 - #18 main
+INFO  22:10:02,061 - #6 (
+INFO  22:10:02,062 - #7 )
+INFO  22:10:02,062 - #18 int
+INFO  22:10:02,062 - #18 zbir
+INFO  22:10:02,062 - #5 ;
+INFO  22:10:02,062 - #18 int
+INFO  22:10:02,063 - #18 niz
+INFO  22:10:02,063 - #23 [
+INFO  22:10:02,063 - #24 ]
+INFO  22:10:02,063 - #5 ;
+INFO  22:10:02,063 - #3 {
+INFO  22:10:02,063 - #18 niz
+INFO  22:10:02,063 - #12 =
+INFO  22:10:02,063 - #37 new
+INFO  22:10:02,064 - #18 int
+INFO  22:10:02,064 - #23 [
+INFO  22:10:02,064 - #17 4
+INFO  22:10:02,064 - #24 ]
+INFO  22:10:02,064 - #5 ;
+INFO  22:10:02,064 - #18 niz
+INFO  22:10:02,065 - #23 [
+INFO  22:10:02,065 - #17 0
+INFO  22:10:02,065 - #24 ]
+INFO  22:10:02,065 - #12 =
+INFO  22:10:02,065 - #18 jedan
+INFO  22:10:02,065 - #5 ;
+INFO  22:10:02,066 - #18 niz
+INFO  22:10:02,066 - #23 [
+INFO  22:10:02,066 - #17 1
+INFO  22:10:02,066 - #24 ]
+INFO  22:10:02,066 - #12 =
+INFO  22:10:02,066 - #18 dva
+INFO  22:10:02,066 - #5 ;
+INFO  22:10:02,066 - #18 niz
+INFO  22:10:02,066 - #23 [
+INFO  22:10:02,066 - #17 2
+INFO  22:10:02,066 - #24 ]
+INFO  22:10:02,066 - #12 =
+INFO  22:10:02,066 - #18 tri
+INFO  22:10:02,066 - #5 ;
+INFO  22:10:02,066 - #18 niz
+INFO  22:10:02,066 - #23 [
+INFO  22:10:02,066 - #17 3
+INFO  22:10:02,066 - #24 ]
+INFO  22:10:02,067 - #12 =
+INFO  22:10:02,067 - #18 cetiri
+INFO  22:10:02,067 - #5 ;
+INFO  22:10:02,067 - #9 print
+INFO  22:10:02,067 - #6 (
+INFO  22:10:02,067 - #18 niz
+INFO  22:10:02,067 - #23 [
+INFO  22:10:02,067 - #17 1
+INFO  22:10:02,067 - #24 ]
+INFO  22:10:02,067 - #7 )
+INFO  22:10:02,067 - #5 ;
+INFO  22:10:02,067 - #9 print
+INFO  22:10:02,068 - #6 (
+INFO  22:10:02,068 - #18 niz
+INFO  22:10:02,068 - #23 [
+INFO  22:10:02,068 - #17 2
+INFO  22:10:02,068 - #24 ]
+INFO  22:10:02,068 - #7 )
+INFO  22:10:02,068 - #5 ;
+INFO  22:10:02,068 - #18 niz
+INFO  22:10:02,068 - #50 ~
+INFO  22:10:02,068 - #17 2
+INFO  22:10:02,068 - #8 ,
+INFO  22:10:02,068 - #17 1
+INFO  22:10:02,068 - #50 ~
+INFO  22:10:02,068 - #5 ;
+INFO  22:10:02,068 - #9 print
+INFO  22:10:02,068 - #6 (
+INFO  22:10:02,068 - #18 niz
+INFO  22:10:02,068 - #23 [
+INFO  22:10:02,069 - #17 1
+INFO  22:10:02,069 - #24 ]
+INFO  22:10:02,069 - #7 )
+INFO  22:10:02,069 - #5 ;
+INFO  22:10:02,069 - #9 print
+INFO  22:10:02,069 - #6 (
+INFO  22:10:02,069 - #18 niz
+INFO  22:10:02,069 - #23 [
+INFO  22:10:02,069 - #17 2
+INFO  22:10:02,069 - #24 ]
+INFO  22:10:02,069 - #7 )
+INFO  22:10:02,069 - #5 ;
+INFO  22:10:02,069 - #4 }
+INFO  22:10:02,069 - #4 }
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 19
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 20
+INFO  22:10:02,077 - Koriscenje konstante Con jedan: int, 1, 0  na liniji 20
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 21
+INFO  22:10:02,077 - Koriscenje konstante Con dva: int, 2, 0  na liniji 21
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 22
+INFO  22:10:02,077 - Koriscenje konstante Con tri: int, 3, 0  na liniji 22
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 23
+INFO  22:10:02,077 - Koriscenje konstante Con cetiri: int, 4, 0  na liniji 23
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 24
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 25
+INFO  22:10:02,077 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 26
+INFO  22:10:02,078 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 27
+INFO  22:10:02,078 - Koriscenje lokalne promenljive Var niz: Arr of int, 1, 1  na liniji 28
+INFO  22:10:02,078 - Generating bytecode file: D:\Desktop\PP1\Projekat\projekat\workspace\MJCompiler\test\program.obj
+INFO  22:10:02,081 - Parsiranje uspesno zavrseno!

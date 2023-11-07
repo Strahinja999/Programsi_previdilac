@@ -1,0 +1,78 @@
+// generated with ast extension for cup
+// version 0.8
+// 23/7/2023 22:39:41
+
+
+package rs.ac.bg.etf.pp1.ast;
+
+public class IdNumBoolConstList extends IDNumCharBoolConstList {
+
+    private IDNumCharBoolConstList IDNumCharBoolConstList;
+    private IDNumCharBoolConst IDNumCharBoolConst;
+
+    public IdNumBoolConstList (IDNumCharBoolConstList IDNumCharBoolConstList, IDNumCharBoolConst IDNumCharBoolConst) {
+        this.IDNumCharBoolConstList=IDNumCharBoolConstList;
+        if(IDNumCharBoolConstList!=null) IDNumCharBoolConstList.setParent(this);
+        this.IDNumCharBoolConst=IDNumCharBoolConst;
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.setParent(this);
+    }
+
+    public IDNumCharBoolConstList getIDNumCharBoolConstList() {
+        return IDNumCharBoolConstList;
+    }
+
+    public void setIDNumCharBoolConstList(IDNumCharBoolConstList IDNumCharBoolConstList) {
+        this.IDNumCharBoolConstList=IDNumCharBoolConstList;
+    }
+
+    public IDNumCharBoolConst getIDNumCharBoolConst() {
+        return IDNumCharBoolConst;
+    }
+
+    public void setIDNumCharBoolConst(IDNumCharBoolConst IDNumCharBoolConst) {
+        this.IDNumCharBoolConst=IDNumCharBoolConst;
+    }
+
+    public void accept(Visitor visitor) {
+        visitor.visit(this);
+    }
+
+    public void childrenAccept(Visitor visitor) {
+        if(IDNumCharBoolConstList!=null) IDNumCharBoolConstList.accept(visitor);
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.accept(visitor);
+    }
+
+    public void traverseTopDown(Visitor visitor) {
+        accept(visitor);
+        if(IDNumCharBoolConstList!=null) IDNumCharBoolConstList.traverseTopDown(visitor);
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.traverseTopDown(visitor);
+    }
+
+    public void traverseBottomUp(Visitor visitor) {
+        if(IDNumCharBoolConstList!=null) IDNumCharBoolConstList.traverseBottomUp(visitor);
+        if(IDNumCharBoolConst!=null) IDNumCharBoolConst.traverseBottomUp(visitor);
+        accept(visitor);
+    }
+
+    public String toString(String tab) {
+        StringBuffer buffer=new StringBuffer();
+        buffer.append(tab);
+        buffer.append("IdNumBoolConstList(\n");
+
+        if(IDNumCharBoolConstList!=null)
+            buffer.append(IDNumCharBoolConstList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(IDNumCharBoolConst!=null)
+            buffer.append(IDNumCharBoolConst.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        buffer.append(tab);
+        buffer.append(") [IdNumBoolConstList]");
+        return buffer.toString();
+    }
+}
